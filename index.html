@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, mimimum-scale=1">
+    <meta name="description" content="3° Desafio Fit Trainer.
+
+     Competição entre equipes de Cross Training realizado ao ar livre com obstáculos distribuídos ao longo dos 5 km de prova, equipes mista 2 Homens e 2 Mulheres, forme sua equipe e supere seus limites, você aceita o Desafio?. 
+
+     Aproveite valores promocionais para 1° lote.">
+    <meta name="keywords" content="Academia, Divulgação, Evento, FitTrainer, Inscrição, Desafio">
+    <meta name="robots" content="index, nofollow">
+    <meta name="author" content="Gregory Sampaio">
+    <title>Desafio Fit Trainer</title>
+    <link rel="icon" href="_imagens/icone_aba.png">
+    
+     <!--Folha de estilo-->
+    <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/fontello.css">
+    <link rel="stylesheet" href="_css/jquery.bxslider.css" />
+    <link rel="stylesheet" href="_css/jquery.mCustomScrollbar.css">
+    
+    <!--Plugin para efeitos 3dcss-->
+    <script src="js/modernizr.custom.js"></script>
+    
+    <!--Plugins gerais (slides e carrossel-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    
+    <!--plugin para slide-->
+    <!-- bxSlider Javascript file -->
+    <script src="js/jquery.bxslider.js"></script>
+    
+    <!--plugin para carrossel-->
+    <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+    
+     <!--plugin para tema de scrool do regulamento-->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    
+     <!--Função do Script para slide_principal-->
+     <script>
+            $(document).ready(function(){
+             $('.bxslider').bxSlider();
+                });
+     </script>
+     <!--Função do Script para deslizar as sessões ao clicar nos links do menu--> 
+    
+    <script>
+       jQuery(document).ready(function($) { 
+      $(".scroll").click(function(event){        
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
+      });
+    });
+   </script>
+    
+    
+</head>
+<body>
+    
+   <!--Cabeçalho com menu lateral mobile e central para desk--> 
+    <header>
+           
+        <div class="container">
+            
+          <a href="index.html"><img id="logo_1" src="_imagens/logo_mobile.png"></a>     
+          <input type="checkbox" id="menu-bar">
+          <label class="icon-menu" for="menu-bar"></label>
+                 
+          <nav class="menu">
+            <a href="#sobre_evento" class="scroll"><span data-hover="Sobre o evento">Sobre o evento</span></a>
+            <a href="#local_evento" class="scroll"><span data-hover="O Local">O Local</span></a>
+            <a href="index.html"><img id="logo_2" src="_imagens/logo.png"></a>
+            <a href="#sobre_regulamento" class="scroll"><span data-hover="Regulamento">Regulamento</span></a>
+            <a href="#inscricao" class="scroll"><span data-hover="Inscrições">Inscrições</span></a>	
+          </nav>                   
+                          
+        </div>
+           
+     </header>
+     
+     <!--Slide com controladores-->
+     <div id="slide_principal">  
+       <ul class="bxslider">
+          <li><img src="_imagens/_slide_principal/banner_1.png" /></li>
+          <li><img src="_imagens/_slide_principal/banner_2.png" /></li>
+          <li><img src="_imagens/_slide_principal/banner_3.png" /></li>
+          <li><img src="_imagens/_slide_principal/banner_4.png" /></li>
+        </ul>
+     </div>  
+   
+    <!--Area das redes sociais-->
+    <div id="container_redes">  
+                       
+       <div class="redes_sociais"  id="instagram"><a><img class="icone" src="_imagens/instagram_2.png"></a></div>
+       <div class="redes_sociais"  id="facebook"><a href="https://www.facebook.com/fittraineracademia/?fref=ts" target="_blank"><img class="icone" src="_imagens/facebook_2.png"></a></div>
+     
+    </div> 
+     
+     <!--Carrossel de imagens dos patrocinadores-->
+   
+    <div id="area_carrossel">
+       
+       <h1>Patrocinadores e Apoiadores</h1>
+       
+        <ul id="flexiselDemo3">
+            <li><img src="_imagens/_carrossel/1.png" /></li>
+            <li><img src="_imagens/_carrossel/2.png" /></li>
+            <li><img src="_imagens/_carrossel/3.png" /></li>
+            <li><img src="_imagens/_carrossel/4.png" /></li>
+            <li><img src="_imagens/_carrossel/5.png" /></li>
+            <li><img src="_imagens/_carrossel/6.png" /></li>
+            <li><img src="_imagens/_carrossel/7.png" /></li>
+            <li><img src="_imagens/_carrossel/8.png" /></li>
+            <li><img src="_imagens/_carrossel/9.png" /></li>
+
+        </ul>    
+    </div>
+   
+    <script type="text/javascript">
+
+
+        $("#flexiselDemo3").flexisel({
+            visibleItems: 3,
+            itemsToScroll: 1,         
+            autoPlay: {
+                enable: true,
+                interval: 5000,
+                pauseOnHover: true
+            }        
+        });
+    
+   
+    </script>
+   
+     <!--Área sobre a página -->    
+    <section id="sobre_evento" class="sobre">
+       
+       <div class="container_sobre">
+         <div class="container_apresentacao">
+             <p>O EVENTO <br><br> </p>
+                <h1>Temos o prazer de informar que, será realizado o 3° Desafio Fit Trainer.</h1><br>
+
+             <p id="sub_titulo"> Competição entre equipes de Cross Training realizado ao ar livre com obstáculos distribuídos ao longo dos 5 km de prova, equipes mista 2 Homens e 2 Mulheres, forme sua equipe e supere seus limites, você aceita o Desafio?</p><br>
+
+               <p> Aproveite valores promocionais para 1° lote.
+                Faça sua inscrição <a class="scroll" href="#inscricao">(inscrições on-line)</a> agora e receba seu kit, Camisa e viseira em tecido Aerodry + 1 Ponto de Hidratação.</p><br>
+
+                <p>Premiação individual para os três melhores tempos do desafio:</p><br>
+               <p id="sub_titulo"> Primeiro lugar Medalha e Troféu.</p>
+                <p id="sub_titulo">Segundo lugar Medalha + Brindes</p>
+                <p id="sub_titulo">Terceiro lugar Medalha + Brindes</p><br>
+
+                <p><b>Data:</b> No domingo, dia 30 de julho de 2017.</p>
+               <p> <b>Horário da Largada:</b> 1° equipe as 8:00h e demais a cada 20 minutos.</p>
+                <p><b>Local:</b> Rua Luís Firmino de Sousa, 184 – Urucutuba, Caucaia/CE  <a href="https://www.google.com/maps?ll=-3.794594,-38.640513&z=18&t=m&hl=pt-BR&gl=BR&mapclient=embed&q=R.+Luiz+Firmino+de+Sousa+Caucaia+-+CE" target="_blank">(Veja mapa).</a></p>
+                <p>Cada equipe terá duração limite de 1h.</p>
+               <p> <b>Formato das equipes:</b> 2 Homens e 2 Mulheres.</p>
+                <p><b>Organização:</b> Academia Fit Trainer.</p>
+               <p> Máximo de 80 participantes.</p>
+                <p>Modalidade mista.</p>
+               <p> <b>Inscrições:</b> até o dia 25 de junho de 2017.</p>
+                <p><b>Inscrições on-line e presenciais:</b> Av. Dom Almeida Lustosa, 2628, alto. Parque Guadalajara (JUREMA).</p>
+                <p><b>Valores:</b> 1° Lote: R$85,00 (Oitenta e Cinco Reais) até 17 de junho</p>
+               <p><b>2º Lote:</b> R$100,00 (Cem Reais) a partir de 18 de junho.</p><br>
+            
+         </div>   
+       </div>
+    
+    </section>  
+                  
+    <!--àrea de serviços -->  
+    
+   <section id="divulgacao"> 
+        
+        <div class="container_conteudo">
+         
+          <div class="container_cartas">
+              <div class="titulo_caixa_1"><h1>Fotos do evento</h1></div>
+             <div  class="lado frente">
+             
+              <div id="slider">
+               
+                <div class="elemento">
+                    <figure class="foto_legenda_2"><figcaption id="texto_slider_2"><a href="galeria.html">Ver galeria</a></figcaption><a href=""><img src="_imagens/_slide_2/1.png"/></a></figure>
+                </div>
+
+                  <div class="elemento">
+                  <figure class="foto_legenda_2"><figcaption id="texto_slider_2"><a href="galeria.html">Ver galeria</a></figcaption><a href="#"><img src="_imagens/_slide_2/2.jpg"/></a></figure>
+                </div>
+
+                <div class="elemento">
+                   <figure class="foto_legenda_2"><figcaption id="texto_slider_2"><a href="galeria.html">Ver galeria</a></figcaption><a href="#"><img src="_imagens/_slide_2/3.jpg"/></a></figure>
+                </div>
+
+                <div class="elemento">
+                  <figure class="foto_legenda_2"><figcaption id="texto_slider_2"><a href="galeria.html">Ver galeria</a></figcaption><a href="#"><img src="_imagens/_slide_2/4.jpg"/></a></figure>
+                </div>
+
+                <div class="elemento">
+                 <figure class="foto_legenda_2"><figcaption id="texto_slider_2"><a href="galeria.html">Ver galeria</a></figcaption><a href="#"><img src="_imagens/_slide_2/5.jpg"/></a></figure>
+                </div>
+
+                <div class="elemento">
+                   <figure class="foto_legenda_2"><figcaption id="texto_slider_2"><a href="galeria.html">Ver galeria</a></figcaption><a href="#"><img src="_imagens/_slide_2/6.jpg"/></a></figure>
+                </div>
+                
+                <div class="elemento">
+                   <figure class="foto_legenda_2"><figcaption id="texto_slider_2"><a href="galeria.html">Ver galeria</a></figcaption><a href="#"><img src="_imagens/_slide_2/7.jpg"/></a></figure>
+                </div>
+                
+                <div class="elemento">
+                   <figure class="foto_legenda_2"><figcaption id="texto_slider_2"><a href="galeria.html">Ver galeria</a></figcaption><a href="#"><img src="_imagens/_slide_2/8.jpg"/></a></figure>
+                </div>
+                
+                 <div class="elemento">
+                   <figure class="foto_legenda_2"><figcaption id="texto_slider_2"><a href="galeria.html">Ver galeria</a></figcaption><a href="#"><img src="_imagens/_slide_2/9.jpg"/></a></figure>
+                </div>
+                
+                <div class="elemento">
+                   <figure class="foto_legenda_2"><figcaption id="texto_slider_2"><a href="galeria.html">Ver galeria</a></figcaption><a href="#"><img src="_imagens/_slide_2/10.jpg"/></a></figure>
+                </div>
+                
+                <div class="elemento">
+                  <figure class="foto_legenda_2"><figcaption id="texto_slider_2"><a href="galeria.html">Ver galeria</a></figcaption><a href="#"><img src="_imagens/_slide_2/11.jpg"/></a></figure>
+                </div>
+
+            
+     </div>
+
+             </div>
+
+           </div>
+
+        <div class="container_cartas">
+            <div id="local_evento" class="titulo_caixa_1"><h1>Local do evento</h1></div>    
+            <div class="lado frente">
+             
+              <iframe id="iframeMapa" class="foto_carta" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31848.952370351246!2d-38.6466902!3d-3.7842647999999923!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74d27c608fb57%3A0xfbade08745743208!2sR.+Luiz+Firmino+de+Sousa%2C+Caucaia+-+CE!5e0!3m2!1spt-BR!2sbr!4v1493095922429⁠⁠⁠⁠">
+              </iframe> 
+
+               </div>
+             </div>   
+
+     </div> 
+    </section> 
+    
+      <!--Àrea de inscrição e Regulamento-->    
+    <section id="sobre_regulamento">
+       
+      <div class="container_conteudo"> 
+        <div class="container_cartas_2">    
+            <div  class="lado frente_2">
+              <div class="container_apresentacao_2">
+                 <div class="caixa" id="scroll">
+                
+             <p>O REGULAMENTO <br><br> CAPÍTULO I – DESAFIO FIT TRAINER <br><br>
+ 
+            1 - O DESAFIO FIT TRAINER será realizado no domingo, dia 30 de Julho de 2017. <br><br>
+             2 – O desafio terá Equipes distintas, com horários de largada diferenciados.<br><br>
+
+            2.1 - O início de largada das equipes será às 08h e segue a cada 20minutos com as respectivas equipes inscritas. O local de largada de todas as Baterias será num sitio, localizada da Rua Luis Firmino de Sousa, 184 – Urucutuba, Caucaia/CE.<br><br>
+
+            3 – O desafio será disputado em tempo cronometrado com um fiscal acompanhando a equipe durante todo o percurso e a execução dos movimentos.<br><br>
+
+            4 – Cada equipe terá duração limite de 1h (uma hora) a partir do horário de largada, e cada equipe tem a largada autorizada a cada 20min a partir da primeira.<br><br>
+
+            5 – Este desafio é organizado pela empresa A. de Carvalho Pereira Academia, através de seus membros e demais colaboradores das empresas organizadoras, que terão competência para resolver qualquer problema ou responder qualquer eventual dúvida no decorrer da corrida.<br><br>
+
+            6 – O Desafio Fit Trainer terá obstáculos distribuídos ao longo dos 5km de prova, a cada atleta que não transpor um dos obstáculos poderá pagar a punição: 30 avanço ou 15 Burpees supervisionados pela equipe do Staff, além das punições citadas, serão acrescidos de 5 minutos no seu tempo.<br><br>
+
+            6.1 INFORMAÇÕES SOBRE OS OBSTÁCULOS <br><br>
+
+            6.1. Os obstáculos será surpresa e somente terão conhecimento dos mesmos durante a participação no dia do evento.<br><br>
+
+            6.2. Quanto ao transpor dos obstáculos: existe um limite de no Maximo dois obstáculos.<br><br>
+
+            CAPÍTULO II – DA INSCRIÇÃO <br><br>
+
+            7 - Poderão participar do desafio o(a) competidor(a), aqui denominado(a) atleta, que se inscrever na desafio, realizar o pagamento do valor correspondente à inscrição no prazo determinado, expressar concordância com as normas deste regulamento e assinar o termo de responsabilidade durante a retirada dos kits. <br><br>
+
+            8 - As inscrições poderão ser realizadas, pela Internet, no site <a href="index.html#iframeCadastro" class="scroll">www.academiafittrainer.com.br</a>, e na Academia Fit Trainer localizada na Av. Dom Almeida Lustosa, 2628, altos. Parque Guadalajara (JUREMA) e custara R$85,00 (Oitenta e Cinco Reais) do dia 21 de abril á 17 de junho de
+             2017 e (R$100,00 Cem Reais) a partir de 18 de julho até o fim das inscrições 25 de junho de 2017.<br><br>
+
+            8.1 - Pelo pagamento das inscrições descritas acima o(a) atleta receberá o kit básico, Camisa e viseira em tecido Aerodry com tamanho escolhido pelo atleta.<br><br>
+
+            8.2 - Será cobrado, pela inscrição online, o valor de R$ 4,50 à 7% a título de tarifa que garante não só a segurança e conveniência da transação realizada pelo atleta, mas também remunera os seguintes serviços controle de confirmação e autenticação de pagamento online junto a instituições financeiras; sistema de segurança da informação, já que são armazenadas informações pessoais e utilizadas informações criptografadas de cartão de crédito dos clientes;  disparo de e-mail de confirmação do pedido de compra da inscrição (antes da confirmação do pagamento);  disparo de e-mail de confirmação da venda (ou reprovação) de inscrição após a confirmação do pagamento; custo de banda de acesso à internet.<br><br>
+
+            9 - No ato da inscrição, ao concordar com o regulamento, assinalando a opção apresentada no sistema on-line ou na ficha de inscrição, o(a) atleta aceita todos os termos do regulamento e assume total responsabilidade por sua participação no evento de acordo com o termo de responsabilidade.<br><br>
+
+            10 - As inscrições serão encerradas 07 (sete) dias antes da data da prova marcada para a realização do desafio, ou em data anterior a esta, caso seja atingido o limite técnico definido para a corrida.<br><br>
+
+            11 - As empresas organizadoras poderão, a qualquer momento, suspender ou prorrogar prazos ou, ainda, elevar ou limitar o número de inscrições, em função de necessidades, disponibilidade técnica e/ou questões estruturais, sem aviso prévio.<br><br>
+
+            12 - Os atletas são responsáveis pela veracidade das informações fornecidas no sistema on-line ou na ficha de inscrição. Os atletas concordam que o e-mail será o meio de comunicação utilizado pela empresa organizadora para repassar informações e atualizações referentes o desafio.<br><br>
+
+            13 - A quantia paga pela inscrição não será devolvida, caso o(a) atleta(a) comunique a desistência do desafio  fora do prazo previsto no art. 49 do Código de Defesa do Consumidor - CDC.<br><br>
+
+            14 - A inscrição do desafio é pessoal e intransferível, não podendo qualquer atleta ser substituído(a) por outro(a), em qualquer situação.<br><br>
+
+            14.1 - O atleta que ceder seu número de peito para outra pessoa será responsável por qualquer acidente ou dano que esta venha a sofrer, isentando o atendimento e qualquer
+            responsabilidade da empresa organizadora, seus patrocinadores, apoiadores e órgãos públicos.<br><br>
+
+            14.2 - Caso haja fraude comprovada, principalmente em relação aos benefícios definidos por lei, o(a) atleta será desclassificado do desafio e, poderá responder por crime de falsidade ideológica e/ou documental perante as autoridades competentes e ficará impedido de participar de outros eventos esportivos organizadas pela empresa.<br><br>
+
+            15 - Serão permitidas a participação de atletas menores de 18 (dezoito) anos de idade, sendo que com permissão de seus responsáveis legais.<br><br>
+
+
+            CAPÍTULO III – DA ENTREGA DE KITS<br><br>
+
+            16 - A entrega dos kits acontecerá nos dias que antecedem o desafio, em local, data e horário a ser informado pela organização por e-mail ou pelo telefone: (85) 98708326,(85)988972933.<br><br>
+
+            17 - O Kit somente poderá ser retirado pelo (a) atleta inscrito mediante apresentação do documento de confirmação de inscrição, o respectivo recibo de pagamento e documento oficial com foto.<br><br>
+
+            18 - A retirada de kits só poderá ser efetivada por terceiros mediante apresentação de autorização específica para este fim com cópia de documento de identificação do inscrito.<br><br>
+
+            19 - A empresa organizadora não se responsabiliza pela retirada dos kits nos casos em que houver apresentação de autorização específica mediante a demonstração de documento de identificação.<br><br>
+
+            20 - O KIT BÁSICO do desafio será composto por uma camiseta e uma viseira.<br><br>
+
+            21 - No momento da retirada do kit o responsável deverá conferir os seus dados e o número de sua inscrição.<br><br>
+
+            22 - Não serão aceitas reclamações cadastrais como também dos itens que compõe o kit, após sua retirada.<br><br>
+
+            23 – Não será permitida troca de tamanho ou de camisa, e será obrigatório o uso da camisa do evento, sob pena de não largar caso seja identificado e não receber brindes ofertados pelos patrocinadores ao ser identificado no momento que concluir a prova.<br><br>
+
+            CAPÍTULO IV – DAS INSTRUÇÕES E REGRAS PARA O DESAFIO<br><br>
+
+            24 - O horário de largada oficial da prova é: 08:00h para a primeira equipe.<br><br>
+
+            25 - A participação do (a) atleta no Desafio a ser em equipes mista com 4 atletas dois homens e duas mulheres.<br><br>
+
+            26 - Recomendamos aos atletas a utilização de tênis para realização do percurso. Não nos responsabilizamos por possíveis acidentes aos atletas que estiverem descalços.<br><br>
+
+            27 - É obrigatório o uso da camisa do evento.<br><br>
+
+            LOCAL DA PROVA: Urucutuba, Rua Dom Crisóstomo Salama, 1183 – Eusébio<br><br>
+
+            CAPÍTULO V – DA PREMIAÇÃO<br><br>
+
+            28. – Premiação apenas para os três melhores tempo do desafio.<br><br>
+
+               - Medalha e troféu para o primeiro lugar.<br>
+               - Medalha para segundo e terceiro lugar.<br><br>
+
+
+            CAPÍTULO VI – DAS CONDIÇÕES FÍSICAS DOS ATLETAS E
+            SERVIÇOS DE APOIO<br><br>
+
+            29 – Todos (as) os(as) atletas deverão estar em dia com rigorosa avaliação médica para realização do desafio, sendo conhecedores de seu estado de saúde e de sua aptidão física para participar do desafio.<br><br>
+
+            29.1 - A empresa organizadoras não se responsabilizará pela saúde física dos atletas.<br><br>
+
+            30 - O atleta é responsável pela decisão de participar da corrida, avaliando sua condição física, desempenho e julgando por si só se deve ou não continuar ao longo da competição.<br><br>
+
+            31 - A empresa organizadora não tem responsabilidade sobre o atendimento médico dos atletas, despesas médicas em casos de internação ou lesões geradas pela participação no desafio. Será disponibilizado dois socorrista emergencial aos atletas e para a remoção destes aos hospitais da rede pública de saúde e ainda contará com um seguro contra acidentes pessoais.<br><br>
+
+            32 - O(a) atleta ou seu(sua) acompanhante poderá decidir pela remoção ou transferência para hospitais da rede privada de saúde, eximindo a empresa organizadora de qualquer responsabilidade ou reembolso pelas despesas decorrentes deste atendimento médico.<br><br>
+
+            32.1 - Ao realizar a inscrição, o atleta atesta que tem condições físicas para nadar durante a prova em caso de piscina no percurso ou obstáculos que envolvam água sendo necessária imersão.<br><br>
+
+            33 - Ao longo do percurso do Desafio haverá 1 postos de hidratação de água.<br><br>
+
+            CAPÍTULO VII – DOS DIREITOS DE IMAGEM E DIREITOS AUTORAIS<br><br>
+
+            34 - O(a) atleta que inscreve-se e conseqüentemente participa do desafio está incondicionalmente aceitando e concordando em ter sua imagem e voz divulgada através de fotos, filmes, rádio, jornais, revistas, internet, vídeos e televisão, ou qualquer outro meio de comunicação, para usos informativos, promocionais ou publicitários relativos à corrida, sem acarretar nenhum ônus às empresas e/ou parceiros responsáveis pela cobertura de mídia da corrida, renunciando o recebimento de qualquer renda que vier a ser auferida com tais direitos em qualquer tempo/data.<br><br>
+
+            35 - Todos os atletas, staffs, organizadores cedem no ato de sua inscrição todos os direitos de utilização de sua imagem e voz para a empresa organizadora e/ou para os parceiros desta, responsáveis pela cobertura de mídia da corrida.<br><br>
+
+            36 - A filmagem, transmissão pela televisão, fotografias ou vídeo relativos ao desafio têm os direitos reservados aos organizadores.<br><br>
+
+            CAPÍTULO VIII – DA SUSPENSÃO, ADIAMENTO E CANCELAMENTO
+            DO EVENTO ESPORTIVO<br><br>
+
+            37 - A Comissão Organizadora, primando pela segurança dos atletas, poderá determinar a suspensão do desafio, iniciada ou não, por questões de segurança pública, vandalismo e/ou motivos de força maior. Sendo suspensa a corrida, por qualquer um destes motivos, esta será considerada realizada e não haverá designação de nova data para realização do desafio.<br><br>
+
+            37.1 - Os(as) atletas ficam cientes que deverão assumir, no ato da inscrição, todos os riscos e danos da eventual suspensão da desafio (iniciada ou não) por questões de segurança pública, vandalismo e/ou motivos de força maior, não gerando qualquer responsabilidade para a empresas organizadoras.<br><br>
+
+            37.2 - Na hipótese de suspensão do evento esportivo NÃO haverá devolução do valor de inscrição.<br><br>
+
+            38 – O desafio poderá ser adiada ou cancelada a critério das empresas organizadoras, sendo comunicando aos inscritos está decisão pelo site oficial da corrida.<br><br>
+
+
+
+            CAPÍTULO IX – DAS DISPOSIÇÕES GERAIS<br><br>
+
+
+            39 - Caso o atleta não queira arcar com o custo da tarifa pela inscrição on-line poderá realizar a inscrição física, comparecendo pessoalmente, no local ainda a ser informado no site de inscrição.<br><br>
+
+            39.1 - Não serão aceitas inscrições físicas por procuração.<br><br>
+
+            40 - Não haverá reembolso, por parte das empresas organizadoras, bem como de seus patrocinadores e apoiadores, de nenhum valor correspondente ou dano aos equipamentos e/ou acessórios utilizados pelos atletas no evento, independente de qual for o motivo, tampouco, por qualquer extravio de materiais ou prejuízo que porventura os atletas ou terceiros venham a sofrer durante a participação do desafio. Os custos de transporte, hospedagem, alimentação, seguros ou quaisquer outras despesas necessárias ou provenientes da sua participação na prova, antes, durante e depois da mesma serão de responsabilidade exclusiva do atleta.<br><br>
+
+            41 - As empresas organizadoras poderão, a seu critério ou conforme as necessidades do desafio, alterar ou revogar este regulamento, total ou parcialmente, informando as mudanças pelo site oficial da corrida.<br><br>
+
+            42 - As dúvidas ou omissões deste Regulamento serão dirimidas pela empresa e/ou Comissão organizadora do desafio de forma soberana, não cabendo recurso destas decisões.<br><br>
+             </p><br>    
+       
+        </div> 
+         </div>    
+          </div>
+            </div> 
+ 
+            <div id="inscricao" class="container_cartas_2">    
+                <div  class="lado frente_2">
+                  <iframe id="iframeCadastro" class="caixa foto_carta_2" src="https://docs.google.com/forms/d/e/1FAIpQLSelrFz6YxOcKH0QtmoGTDTjhjtJIEpKyDSKGYTsBhFZHsBmIg/viewform?embedded=true">
+                  </iframe> 
+
+                   </div>
+            </div> 
+       </div>             
+    
+    
+    </section>  
+      
+    <!--Rodapé --> 
+   
+    <footer class="rodape">
+        <div class="container_rodape">
+           <div class="coluna_footer_1">
+                <h2>Academia FIT Trainer</h2>  
+                <p>Av Dom Almeida Lustosa, 2628-altos
+                   Caucaia, Ceara, Brasil</p>   
+                <p>Modalidades oferecidas:
+                        Musculação, 
+                        Treinamento Funcional,
+                        Muay-thai,
+                        Aeróbica,
+                        Ritmos, 
+                        Circuito abdominal.</p>
+         
+                <p>Telefone: +55 (85) 3046-6671</p> 
+           </div> 
+
+           <div class="coluna_footer_2">  
+                       
+               <div class="redes_sociais_2"  id="instagram"><a><img class="icone" src="_imagens/instagram_2.png"></a></div>
+               <div class="redes_sociais_2"  id="facebook"><a href="https://www.facebook.com/fittraineracademia/?fref=ts" target="_blank"><img class="icone" src="_imagens/facebook_2.png"></a></div>
+     
+          </div> 
+        
+          <!--Plugin para facebook--> 
+          <div class="coluna_footer_3">
+			 <div id="fb-root"></div>
+				<script>(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.9";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+
+				<div class="fb-page" data-			href="https://www.facebook.com/fittraineracademia/?fref=ts" data-width="320" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/fittraineracademia/?fref=ts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/fittraineracademia/?fref=ts">Academia FIT Trainer</a></blockquote>
+				</div>
+			</div>                                    
+       </div>                                
+      </footer>
+      
+      <!--Direitos autorais-->
+      
+      <div class="direitos">
+          <p class="copyright"> Copyright - <a href="https://www.facebook.com/encontreoquehademelhor/" target="_blank">DivulgarCe</a>  / Desenvolvedor - <a href="https://www.facebook.com/gregory.sampaio.54" target="_blank">Gregory Sampaio</a></p>
+      </div> 
+      
+       <!--Função do Script para slide_2-->         
+         
+        <script> src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js' type='text/javascript'> </script>
+
+             <script type="text/javascript">//<![CDATA[
+               $(function(){
+                 $('#slider div:gt(0)').hide();
+                setInterval(function(){
+                 $('#slider div:first-child').fadeOut(0)
+                 .next('div').fadeIn(2000)
+                 .end().appendTo('#slider');}, 6000);
+        });
+        //]]> 
+        </script>
+        
+         <!--Função e tema para scroll das caixas do cardapio, parte de trás que mostra as informações do prato, buscar tema na internet, na pagina --- http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/scrollbar_themes_demo.html--> 
+ 
+          <script>
+            (function($){
+                $(window).on("load",function(){
+                    $(".caixa").mCustomScrollbar(
+                        { theme:"inset-3-dark"
+                    });
+                });
+            })(jQuery);
+          </script>   
+        
+             
+                       
+</body>
+</html>
