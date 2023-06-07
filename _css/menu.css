@@ -1,0 +1,147 @@
+#menu-bar{
+    display: none;
+    
+}
+
+header label{
+    
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 60%;
+    height: 100vh;
+    background: rgba(35,35,35,0.89);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+    z-index: 9999;
+}
+
+.menu a{
+    
+    display: block;
+    color: #fff;
+    height: 80px;
+    text-decoration: none;
+    padding: 22px;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.menu a:hover{
+    background: rgba(255,255,255,0.3);
+}
+
+.menu a:nth-child(3){
+    display: none;
+}
+
+
+.menu a:nth-child(3):hover{
+     background: none;
+}
+
+
+#menu-bar:checked ~ .menu {
+    
+    transform: translateX(0%);
+    
+}
+
+
+
+@media (orientation: landscape){
+   header{
+        position: absolute;
+    }
+
+}
+
+@media (min-width:768px) {
+    
+    .menu {
+        
+        position: static;
+        width: 100%;
+        height: 50px;
+        transform: translateX(0%);
+        display: flex;
+        justify-content: space-around;
+        background: rgba(35,35,35,0.1);
+        z-index: 100;
+    }
+    .menu a {
+        
+        display: inline-block;
+        position: relative;
+        outline: none;
+        font-weight: 400;
+        text-shadow: 0 0 1px rgba(255,255,255,0.3);
+        font-size: 1em;
+        border: none;
+        line-height: 30px;
+        -webkit-perspective: 1000px;
+        -moz-perspective: 1000px;
+        perspective: 1000px;
+          
+    }
+    
+    .menu a span{
+        
+        position: relative;
+        display: inline-block;
+        padding: 0 px;
+        -webkit-transition: -webkit-transform 0.3s;
+        -moz-transition: -moz-transform 0.3s;
+        transition: transform 0.5s;
+        -webkit-transform-origin: 50% 0;
+        -moz-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        
+    }
+    
+    .csstransforms3d .menu a span::before {
+        
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        
+        content: attr(data-hover);
+        -webkit-transition: background 0.3s;
+        -moz-transition: background 0.3s;
+        transition: background 0.9s;
+        -webkit-transform: rotateX(-90deg);
+        -moz-transform: rotateX(-90deg);
+        transform: rotateX(-90deg);
+        -webkit-transform-origin: 50% 0;
+        -moz-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        
+    }
+    
+    .menu a:hover span, .menu a:focus span{
+        
+        -webkit-transform: rotateX(90deg) translateY(-22px);
+        -moz-transform: rotateX(90deg) translateY(-22px);
+        transform: rotateX(90deg) translateY(-22px);
+        
+    }
+    
+    
+    header label {
+        display: none;
+    }
+    
+}
+
+
